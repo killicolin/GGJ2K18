@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1190624082503626}
+  m_IsPrefabParent: 1
+--- !u!1 &1190624082503626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4052466966190578}
+  - component: {fileID: 114641870586991098}
+  - component: {fileID: 82391453664916040}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4052466966190578
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1190624082503626}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.9913342, y: 0.5603567, z: -0.0021243081}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &82391453664916040
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1190624082503626}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &114641870586991098
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1190624082503626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c5cefe1ed374354bae64e647f02a6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alive: 1
+  cameraRange: 5
+  spiritProjectile: {fileID: 1916232220478442, guid: 58eba56dbfa2e3b49a87cc3b4d55d1b5,
+    type: 2}
+  bulletProjectile: {fileID: 1275723575879092, guid: c81ead9b03a8ff74fbfad3934bf5ac52,
+    type: 2}
+  lifeTimeBody: 5
+  ennemiRangeView: 3
+  ennemiDistanceAttackRange: 2.5
+  soulSpeed: 1
+  bulletSpeed: 1
+  bulletFireCooldown: 1
+  playerSpeed: 4
+  ennemi1Speed: 3
+  ennemi2Speed: 3
+  DeathSoundList:
+  - {fileID: 8300000, guid: e6ed1d818a30d5f4a831579d184bab38, type: 3}
+  - {fileID: 8300000, guid: 28cf0534c80344c4996a4bbbdcc05192, type: 3}
+  - {fileID: 8300000, guid: eef04af7d8e9eca40bad84258cf521bc, type: 3}
+  - {fileID: 8300000, guid: 0fa409a6e0736bd4ebdc21510febbcd5, type: 3}
+  PistolSoundList:
+  - {fileID: 8300000, guid: 9dff3b0c4ba84dd43839a9b5433c88ba, type: 3}
+  - {fileID: 8300000, guid: 5525e493b50a6a14d9295a8f9de59abf, type: 3}
+  - {fileID: 8300000, guid: 3b11af532936f894ab93140d7b23c921, type: 3}
+  - {fileID: 8300000, guid: e8bd7704917d2914a9943501e4f4a867, type: 3}
+  - {fileID: 8300000, guid: 028df93167fe52f46b3d9a7f86feb607, type: 3}
+  ClubSoundList:
+  - {fileID: 8300000, guid: a6f4934adcb0e354086c39c5777ad2ea, type: 3}
+  - {fileID: 8300000, guid: 41897a77f7eb7894fa610f022c6fcd0e, type: 3}
+  - {fileID: 8300000, guid: 5085f97998d68744d90442cd1dada4ed, type: 3}
+  - {fileID: 8300000, guid: 2d9b5ee7daa0f9444935e605fdcf6d46, type: 3}
+  - {fileID: 8300000, guid: 780a159dc940a15459eefb87e6ecd597, type: 3}
+  SoulShotSoundList:
+  - {fileID: 8300000, guid: 86ce4ffc03e97934483d640e4a83cd25, type: 3}
+  - {fileID: 8300000, guid: f8b74c2ef40976349b1dae368fcb3a0e, type: 3}
+  - {fileID: 8300000, guid: 4d864f3d5055a4a48b4bcf833553439b, type: 3}
+  TrackList: []
+  ElevatorOpen: {fileID: 8300000, guid: 3f22f8df7db9b9043b960efef2d8a50d, type: 3}
+  ElevatorUp: {fileID: 8300000, guid: 2b789d4a0011cdc43950a8e29988da4c, type: 3}
+  ElevatorClose: {fileID: 8300000, guid: f72deede015615f4a96c5ff82219ad21, type: 3}
+  canBeKilled: 1
+  minutes: {fileID: 0}
+  secondes: {fileID: 0}
