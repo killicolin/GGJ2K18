@@ -1,6 +1,6 @@
 Game made for the GGJ2K18
 
-#Credits: 
+# Credits: 
 Programming:
 Killian Colin
 Quentin Garcia
