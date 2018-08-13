@@ -1,5 +1,10 @@
 Game made for the GGJ2K18
 
+playable link :
+https://soulshifter.itch.io/soul-shifter
+
+
+
 # Credits: 
 Programming:
 
